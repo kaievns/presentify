@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+lib = File.dirname(__FILE__) + "/../lib"
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require "presentify"
+
+if ! ARGV[0]
+  puts "Please specify a directory"
+elsif ! File.exists?(ARGV[0])
+  puts "Can't find the '#{ARGV[0]}' directory"
+else
+  Presentify.new ARGV[0]
+end

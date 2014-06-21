@@ -1,29 +1,44 @@
 # Presentify
 
-TODO: Write a gem description
+Is a little ruby gem that turns a folder of ruby scripts into
+a CLI based presentation, where one can show and run the code.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'presentify'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install presentify
 
-## Usage
+## Slides
 
-TODO: Write usage instructions here
+Any folder with numerical filenames
 
-## Contributing
+    slides/
+      1.rb
+      2.rb
+      ...
 
-1. Fork it ( https://github.com/[my-github-username]/presentify/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Every slide should have a header comment with the slide title and
+some ruby code to show / run
+
+    # Slide Title
+
+    print "Hello world!"
+
+## Running and navigating
+
+You can start your presentation by running the `presentify` command
+with the argument that points to your slides folder
+
+    $ presentify slides
+
+Once it starts, use the arrow keys to switch between slides and code/demo modes
+
+* `up` - show the code
+* `down` - run the code
+* `left` - previous slide
+* `right` - next slide
+
+## License & Copyright
+
+All code in this library is licensed under the terms of the MIT License
+
+Copyright (C) 2014 Nikolay Nemshilov

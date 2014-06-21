@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Presentify::VERSION
   spec.authors       = ["Nikolay Nemshilov"]
   spec.email         = ["nemshilov@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Turns a folder with ruby files into a CLI presentation.}
+  spec.description   = %q{Turns a folder with ruby files into a CLI presentation. For real.}
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
